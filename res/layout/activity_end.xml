@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myRoundProgress="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EndActivity">
+
+    <RelativeLayout
+        android:layout_width="@dimen/app_width"
+        android:layout_height="@dimen/app_height"
+        android:layout_centerInParent="true"
+        android:background="@android:color/black">
+
+        <RelativeLayout
+            android:id="@+id/star_mv_ly"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/bg_22"/>
+
+            <RelativeLayout
+                android:id="@+id/star_move_ly"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/star"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/xing_22" />
+
+                <com.xiaoxun.englishdailystudy.view.MyCircle
+                    android:id="@+id/progress_circle"
+                    android:layout_width="@dimen/circle_width"
+                    android:layout_height="@dimen/circle_height"
+                    android:layout_marginLeft="@dimen/circle_margin_left"
+                    android:layout_marginTop="@dimen/circle_margin_top"
+                    android:background="@android:color/transparent" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/coin_ly"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/black"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/coin"
+                android:layout_width="@dimen/coin_img_width"
+                android:layout_height="@dimen/coin_img_width"
+                android:layout_centerInParent="true"
+		android:scaleType="center"
+                android:src="@drawable/coin_anims" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

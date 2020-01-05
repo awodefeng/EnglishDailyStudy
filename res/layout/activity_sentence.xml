@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SentenceActivity">
+
+    <RelativeLayout
+        android:layout_width="@dimen/app_width"
+        android:layout_height="@dimen/app_height"
+        android:layout_centerInParent="true">
+        <ScrollView
+            android:id="@+id/sentence_ly"
+            android:layout_width="@dimen/sentence_txt_width"
+            android:layout_height="@dimen/sentence_txt_height"
+            android:layout_centerHorizontal="true">
+            <TextView
+                android:id="@+id/sentence_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/begin_study_txt_height"/>
+        </ScrollView>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/study_btn_margin_bottom">
+            <Button
+                android:id="@+id/skip"
+                android:layout_width="@dimen/sentence_btn_width"
+                android:layout_height="@dimen/sentence_btn_height"
+                android:background="@drawable/btn_red_selector"
+                android:text="@string/txt_skip"
+		android:textColor="@color/text_color_1"
+                android:textSize="@dimen/skip_txt_size"/>
+        </FrameLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

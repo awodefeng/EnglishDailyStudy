@@ -1,0 +1,95 @@
+package com.xiaoxun.englishdailystudy.utils;
+
+import java.util.ArrayList;
+
+public class WordStruct {
+    private int id;
+    private String en_text;
+    private String cn_text;
+    private String explanation;
+    private String pic_name;
+    private ArrayList<String> spell_list;
+    private String pronounce_en;
+    private String pronounce_cn;
+    private String en2_text;
+
+    private int score;  //-back_1 haven't learned
+
+    public WordStruct(){
+        spell_list = new ArrayList<>();
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setEn_text(String en_text) {
+        this.en_text = en_text;
+    }
+
+    public String getEn_text() {
+        return en_text;
+    }
+
+    public void setCn_text(String cn_text) {
+        this.cn_text = cn_text;
+    }
+
+    public String getCn_text() {
+        return cn_text;
+    }
+
+    public void setExplanation(String explanation) {
+        this.explanation = explanation;
+    }
+
+    public String getExplanation() {
+        return explanation;
+    }
+
+    public void setPic_name(String pic_name) {
+        this.pic_name = pic_name;
+    }
+
+    public String getPic_name() {
+        return pic_name;
+    }
+
+    public void setPronounce_cn(String pronounce_cn) {
+        this.pronounce_cn = pronounce_cn;
+    }
+
+    public String getPronounce_cn() {
+        return pronounce_cn;
+    }
+
+    public void setPronounce_en(String pronounce_en) {
+        this.pronounce_en = pronounce_en;
+    }
+
+    public String getPronounce_en() {
+        return pronounce_en;
+    }
+
+    public ArrayList<String> getSpell_list() {
+        return spell_list;
+    }
+
+    public void setScore(int score) {
+        this.score = score;
+    }
+
+    public int getScore() {
+        return score;
+    }
+    public void setEn2_text(Sring s){
+	this.en2_text = s;
+    }
+    public String getEn2_text(){
+	return en2_text;
+    }
+}

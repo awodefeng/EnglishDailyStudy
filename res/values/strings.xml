@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">AI英语</string>
+    <string name="txt_progress">进度</string>
+    <string name="txt_begin_study">开始学习</string>
+    <string name="txt_wait_score">等待评测</string>
+    <string name="txt_wait_score_0">发音需提高，再试一次！~~</string>
+    <string name="txt_begin_next">继续学习</string>
+    <string name="txt_finish_course">课程完成</string>
+    <string name="txt_skip_end">这是今天最后一个单词了</string>
+    <string name="The_recording_time_is_too_short">录音时间太短，请重试。</string>
+    <string name="txt_skip">跳过</string>
+    <string name="txt_skipto_finish">完成</string>
+    <string name="txt_begin">AI英语</string>
+    <string name="txt_network_error_title">网络错误</string>   
+    <string name="txt_network_error">网络连接失败，请退出重试。</string>
+    <string name="txt_network_bad">当前网络状况不好，请稍后重试。</string>
+    <string name="txt_network_btn_confirm">知道了</string>
+</resources>

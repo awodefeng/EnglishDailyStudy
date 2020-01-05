@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Study2Activity">
+
+    <RelativeLayout
+        android:layout_width="@dimen/app_width"
+        android:layout_height="@dimen/app_height"
+        android:background="@android:color/black"
+        android:layout_centerInParent="true">
+
+        <com.xiaoxun.englishdailystudy.view.CardGroupView
+            android:id="@+id/card"
+            android:layout_width="@dimen/card_width"
+            android:layout_height="@dimen/card_height" />
+
+
+        <ImageView
+            android:id="@+id/wave1"
+            android:layout_width="@dimen/study_btn_height"
+            android:layout_height="@dimen/study_btn_height"
+            android:layout_marginLeft="@dimen/study_wave_margin_left"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/cycle_16"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/wave2"
+            android:layout_width="@dimen/study_btn_height"
+            android:layout_height="@dimen/study_btn_height"
+            android:layout_marginLeft="@dimen/study_wave_margin_left"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/study_wave_margin_bottom"
+            android:scaleType="fitCenter"
+            android:src="@drawable/cycle_16"
+            android:visibility="gone"/>
+
+        <RelativeLayout
+            android:id="@+id/record_btn_ly"
+            android:layout_width="@dimen/study_btnly_width"
+            android:layout_height="@dimen/study_btnly_height"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="bottom|center"
+            android:visibility="visible">
+            <com.xiaoxun.englishdailystudy.view.FrameImageView
+                android:id="@+id/record_btn"
+                android:layout_width="@dimen/study_btn_width"
+                android:layout_height="@dimen/study_btn_height"
+                android:scaleType="fitCenter"
+                android:src="@drawable/button_frames"/>
+            
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/star_ly"
+            android:layout_width="@dimen/app_width"
+            android:layout_height="@dimen/app_height"
+            android:layout_centerInParent="true"
+            android:background="@color/score_bg_color"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/top_star"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/star02"
+                android:contentDescription="@null"
+                android:visibility="gone" />
+
+
+            <ImageView
+                android:id="@+id/left_star"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/star01"
+                android:contentDescription="@null"
+                android:visibility="gone" />
+
+
+            <ImageView
+                android:id="@+id/right_star"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/star03"
+                android:contentDescription="@null"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+ 	<FrameLayout
+            android:id="@+id/unableLearn_ly"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/score_bg_color"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="@dimen/study_unable_learn_img_width"
+                android:layout_height="@dimen/study_unable_learn_img_width"
+                android:layout_gravity="center"
+                android:scaleType="fitCenter"
+                android:src="@drawable/miss_06"/>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/wait_ly"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+	    android:background="@android:color/black"
+            android:visibility="gone">
+
+            <com.xiaoxun.englishdailystudy.view.CustomGifView
+                android:id="@+id/wait_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+               />
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

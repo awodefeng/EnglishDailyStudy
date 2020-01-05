@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false" >
+    <item
+        android:drawable="@drawable/center1"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/center5"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/center10"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/center15"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/center20"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/center25"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/center30"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/center35"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/center40"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/center44"
+        android:duration="100"/>
+</animation-list>

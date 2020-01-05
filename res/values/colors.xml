@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="text_color_1">#FFFFFF</color>
+    <color name="text_color_2">#aFaFaF</color>
+    <color name="circle_60per_color">#F66E38</color>
+    <color name="circle_60per_under_color">#1a2829</color>
+    <color name="study_en_txt_color">#DF4364</color>
+    <color name="study_cn_txt_color">#333333</color>
+    <color name="score_bg_color">#8f000000</color>
+    <color name="circle_finish_color">#8ee935</color>
+    <color name="back_0">#d57bc3</color>
+    <color name="back_1">#92bf6d</color>
+    <color name="back_2">#8f7ce1</color>
+    <color name="back_3">#f78396</color>
+    <color name="back_4">#f7ce7c</color>
+    <color name="back_5">#75d3af</color>
+</resources>

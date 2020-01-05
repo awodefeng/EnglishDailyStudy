@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="230px"
+        android:layout_height="200px">
+
+        <RelativeLayout
+            android:id="@+id/ly"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/car_03">
+
+            <RelativeLayout
+                android:id="@+id/img_ly"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/img"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/study_img_height"
+                    android:layout_alignParentBottom="true"
+		    android:layout_marginBottom="@dimen/study_btn_margin_bottom"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/apple"
+                    android:visibility="visible"/>
+
+                <com.xiaoxun.englishdailystudy.view.WordsLayout
+                    android:id="@+id/words_img"
+                    android:layout_width="230px"
+                    android:layout_height="60px"
+                    android:layout_alignParentTop="true">
+
+                </com.xiaoxun.englishdailystudy.view.WordsLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/text_ly"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+		android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/en_txt"
+		    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/app_name"
+                    android:textColor="@color/study_en_txt_color"
+                    android:textSize="@dimen/study_en_txt_size"
+		    android:gravity="bottom|center_horizontal" />
+
+                <TextView
+                    android:id="@+id/cn_txt"
+		    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/en_txt"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/app_name"
+                    android:textColor="@color/study_cn_txt_color"
+                    android:textSize="@dimen/study_cn_txt_size"
+		    android:gravity="top|center_horizontal" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
